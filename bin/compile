@@ -15,7 +15,7 @@ function indent {
 function download_yaml {
   tmpdir=.libyaml
   mkdir -p $tmpdir
-  yaml_tar="$BASE_URL/libyaml-0.1.4.tgz"
+  yaml_tar="$BASE_URL/libyaml-0.1.6.tgz"
   curl $yaml_tar -s -o - | tar xzf - -C $tmpdir/
 
   yaml_include_path="$tmpdir/include"
